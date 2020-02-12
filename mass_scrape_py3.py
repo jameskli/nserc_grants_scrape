@@ -9,7 +9,7 @@ from random import randint
 from random import shuffle
 
 # GLOBAL CONSTANTS
-BASE_URL = 'https://www.nserc-crsng.gc.ca/ase-oro/Details-Detailles_eng.asp?id='
+BASE_URL = "https://www.nserc-crsng.gc.ca/ase-oro/Details-Detailles_eng.asp?id="
 MAX_ID = 670100
 MIN_ID = 592611
 BROWSER_WAIT_TIME = 10
@@ -30,6 +30,7 @@ def check_page_headers_exist(id_list):
     working_urls.sort()
     return working_urls
 
+
 # CALCULATION HELPER FUNCTIONS
 
 
@@ -43,12 +44,12 @@ def browser_wait(approx_time=None):
 
 def main():
     id_list = list(range(MIN_ID, MAX_ID + 1))
-    #id_list = list(range(MIN_ID, MIN_ID + 10))
+    # id_list = list(range(MIN_ID, MIN_ID + 10))
     working_urls = check_page_headers_exist(id_list)
     print(len(working_urls), "/", len(id_list))
-    with open('working_ids.txt', 'w') as file:
+    with open("working_ids.txt", "w") as file:
         for item in working_urls:
-            file.write('{}\n'.format(item))
+            file.write("{}\n".format(item))
 
 
 main()
