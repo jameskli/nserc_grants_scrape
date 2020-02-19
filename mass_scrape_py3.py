@@ -18,7 +18,7 @@ BROWSER_WAIT_TIME = 10
 
 # DIRECTORIES AND FILENAMES
 TEST_CSV_SOURCE_DIR = "test-data"
-CSV_SOURCE_DIR = TEST_CSV_SOURCE_DIR
+# CSV_SOURCE_DIR = TEST_CSV_SOURCE_DIR
 CSV_SOURCE_DIR = "data"
 WIP_DIR = "wip"
 RESULTS_DIR = "results"
@@ -36,7 +36,7 @@ NSERC_XPATHS = {
     "Department": "//table[@class='researchDetails']//td[contains(.,'Department:')]/following-sibling::td[1]",
     "Province": "//table[@class='researchDetails']//td[contains(.,'Province:')]/following-sibling::td[1]",
     "Award Amount": "//table[@class='researchDetails']//td[contains(.,'Award Amount:')]/following-sibling::td[1]",
-    "Installments": "//table[@class='researchDetails']//td[contains(.,'Installment:')]/following-sibling::td[1]",
+    "Installment": "//table[@class='researchDetails']//td[contains(.,'Installment:')]/following-sibling::td[1]",
     "Program": "//table[@class='researchDetails']//td[contains(.,'Program:')]/following-sibling::td[1]",
     "Selection Committee": "//table[@class='researchDetails']//td[contains(.,'Selection Committee:')]/following-sibling::td[1]",
     "Research Subject": "//table[@class='researchDetails']//td[contains(.,'Research Subject:')]/following-sibling::td[1]",
