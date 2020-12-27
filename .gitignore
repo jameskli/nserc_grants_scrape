@@ -1,6 +1,7 @@
 # Add any directories, files, or patterns you don't want to be tracked by version control
 # results dir
 results/
+
 # local files
 geckodriver.log
 .vscode/
