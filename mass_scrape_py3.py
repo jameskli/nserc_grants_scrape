@@ -183,7 +183,7 @@ def update_result_csv(result_dict, results_fullpath):
 
 def main():
     create_directories(DIR_LIST)
-    # working_urls = check_page_headers_exist()
+    working_urls = check_page_headers_exist()
     create_output_files()
     log_fullpath = "{}/{}".format(WIP_DIR, "last_id_logged.txt")
     results_fullpath = "{}/{}".format(RESULTS_DIR, "results.csv")
