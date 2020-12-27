@@ -4,7 +4,7 @@
 * Downloads the Canadian Natural Sciences and Engineering Research Council (NSERC) website grant data using `requests` and `lxml`
 
 ## How it Works
-* Each grant is hosted on https://www.nserc-crsng.gc.ca/ase-oro/Details-Detailles_eng.asp?id=XXXXX 
+* Each grant is hosted on `https://www.nserc-crsng.gc.ca/ase-oro/Details-Detailles_eng.asp?id=XXXXX`
 * Each grant has a unique ID, however due to deletions, IDs are not contiguous.
 * `check_page_headers_exist()` first makes sure that the ID exist, and writes it to `working_ids_full.txt`
 * The scraping code goes through `working_ids_full.txt` to visit each grant page using `requests`
